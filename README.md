@@ -1,5 +1,6 @@
 # backligher
 A Linux graphical manager for MSI keyboard backlights
+v0.1.0
 
 ## Description
 This is a graphical interface intended for managing the MSI Gaming Series keyboard backlights under Linux. It supports Normal, Gaming, Breathe and Wave modes.
@@ -16,7 +17,7 @@ Run main.py. It may require root access.
 
 Select mode by using the tabs. Select colors (clicking over them) and intensities (the sliders). Breathe and Wave modes have a speed slider too. Then click the apply button.
 
-
+##Licensing
 
 This software is not related in any way to 'Micro-Star INT'L CO., LTD' or the 'MSI Gaming Series' trademark.
 
