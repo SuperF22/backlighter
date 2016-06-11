@@ -13,7 +13,7 @@ This app requires Kivy. On Ubuntu, run 'sudo apt-get python-kivy' in a terminal 
 
 
 ## Instructions
-Run main.py. It may require root access.
+Run run.sh. Set execution permissions if necessary. It may require root access.
 
 Select mode by using the tabs. Select colors (clicking over them) and intensities (the sliders). Breathe and Wave modes have a speed slider too. Then click the apply button.
 
