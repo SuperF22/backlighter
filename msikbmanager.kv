@@ -1,0 +1,224 @@
+#:kivy 1.0.9
+
+<MainScreen>:
+    size_hint: 1, 1
+    pos_hint: {'center_x': .5, 'center_y': .5}
+    do_default_tab: False
+    TabbedPanelItem:
+        id: tabbed_panel_item_normal
+        text: 'Normal'
+        BoxLayout:
+            canvas:
+                Color:
+                    rgba: 0, 0, 0, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            orientation: 'vertical'
+            BoxLayout:
+                orientation:'horizontal'
+                Button:
+                    id: button_region1
+                    size_hint: (0.3333333,1)
+                    on_press: root.next_color(0,self)
+                    background_color: (1,0,0,1)
+                    background_normal: 'button_white.png'
+                Button:
+                    id: button_region2
+                    size_hint: (0.3333333,1)
+                    on_press: root.next_color(1,self)
+                    background_color: (0,1,0,1)
+                    background_normal: 'button_white.png'
+                Button:
+                    id: button_region3
+                    size_hint: (0.3333333,1)
+                    on_press: root.next_color(2,self)
+                    background_color: (0,0,1,1)
+                    background_normal: 'button_white.png'
+            BoxLayout:
+                size_hint: (1,0.2)
+                orientation:'horizontal'
+                Slider:
+                    id: slider_region1
+                    range: (0,3)
+                    step: 1
+                    value: 1
+                    on_touch_up: root.upd_intensity(0,self)
+                Slider:
+                    id: slider_region2
+                    range: (0,3)
+                    step: 1
+                    value: 1
+                    on_touch_up: root.upd_intensity(1,self)
+                Slider:
+                    id: slider_region3
+                    range: (0,3)
+                    step: 1
+                    value: 1
+                    on_touch_up: root.upd_intensity(2,self)
+            Button:
+                id: button_apply
+                size_hint: (1,0.3)
+                text: 'Apply'
+                on_press: root.apply(1)
+    TabbedPanelItem:
+        id: tabbed_panel_item_gaming
+        text: 'Gaming'
+        BoxLayout:
+            canvas:
+                Color:
+                    rgba: 0, 0, 0, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            orientation: 'vertical'
+            BoxLayout:
+                orientation:'horizontal'
+                Button:
+                    id: button_region1
+                    size_hint: (0.3333333,1)
+                    on_press: root.next_color(0,self)
+                    background_color: (1,0,0,1)
+                    background_normal: 'button_white.png'
+            BoxLayout:
+                size_hint: (1,0.2)
+                orientation:'horizontal'
+                Slider:
+                    id: slider_region1
+                    range: (0,3)
+                    step: 1
+                    value: 1
+                    on_touch_up: root.upd_intensity(0,self)
+            Button:
+                id: button_apply
+                size_hint: (1,0.3)
+                text: 'Apply'
+                on_press: root.apply(2)
+    TabbedPanelItem:
+        id: tabbed_panel_item_breathe
+        text: 'Breathe'
+        BoxLayout:
+            canvas:
+                Color:
+                    rgba: 0, 0, 0, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            orientation: 'vertical'
+            BoxLayout:
+                orientation:'horizontal'
+                Button:
+                    id: button_region1
+                    size_hint: (0.3333333,1)
+                    on_press: root.next_color(0,self)
+                    background_color: (1,0,0,1)
+                    background_normal: 'button_white.png'
+                Button:
+                    id: button_region2
+                    size_hint: (0.3333333,1)
+                    on_press: root.next_color(1,self)
+                    background_color: (0,1,0,1)
+                    background_normal: 'button_white.png'
+                Button:
+                    id: button_region3
+                    size_hint: (0.3333333,1)
+                    on_press: root.next_color(2,self)
+                    background_color: (0,0,1,1)
+                    background_normal: 'button_white.png'
+            BoxLayout:
+                size_hint: (1,0.15)
+                orientation:'horizontal'
+                Slider:
+                    id: slider_region1
+                    range: (0,3)
+                    step: 1
+                    value: 1
+                    on_touch_up: root.upd_intensity(0,self)
+                Slider:
+                    id: slider_region2
+                    range: (0,3)
+                    step: 1
+                    value: 1
+                    on_touch_up: root.upd_intensity(1,self)
+                Slider:
+                    id: slider_region3
+                    range: (0,3)
+                    step: 1
+                    value: 1
+                    on_touch_up: root.upd_intensity(2,self)
+            Slider:
+                id: slider_period
+                size_hint: (1,0.15)
+                range: (-2.5,2)
+                step: 0.025
+                value: 0.5
+            Button:
+                id: button_apply
+                size_hint: (1,0.3)
+                text: 'Apply'
+                on_press: root.apply(3)
+    TabbedPanelItem:
+        id: tabbed_panel_item_breathe
+        text: 'Wave'
+        BoxLayout:
+            canvas:
+                Color:
+                    rgba: 0, 0, 0, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            orientation: 'vertical'
+            BoxLayout:
+                orientation:'horizontal'
+                Button:
+                    id: button_region1
+                    size_hint: (0.3333333,1)
+                    on_press: root.next_color(0,self)
+                    background_color: (1,0,0,1)
+                    background_normal: 'button_white.png'
+                Button:
+                    id: button_region2
+                    size_hint: (0.3333333,1)
+                    on_press: root.next_color(1,self)
+                    background_color: (0,1,0,1)
+                    background_normal: 'button_white.png'
+                Button:
+                    id: button_region3
+                    size_hint: (0.3333333,1)
+                    on_press: root.next_color(2,self)
+                    background_color: (0,0,1,1)
+                    background_normal: 'button_white.png'
+            BoxLayout:
+                size_hint: (1,0.15)
+                orientation:'horizontal'
+                Slider:
+                    id: slider_region1
+                    range: (0,3)
+                    step: 1
+                    value: 1
+                    on_touch_up: root.upd_intensity(0,self)
+                Slider:
+                    id: slider_region2
+                    range: (0,3)
+                    step: 1
+                    value: 1
+                    on_touch_up: root.upd_intensity(1,self)
+                Slider:
+                    id: slider_region3
+                    range: (0,3)
+                    step: 1
+                    value: 1
+                    on_touch_up: root.upd_intensity(2,self)
+            Slider:
+                id: slider_period_wave
+                size_hint: (1,0.15)
+                range: (-50,-0.25)
+                step: 0.025
+                value: -10
+            Button:
+                id: button_apply
+                size_hint: (1,0.3)
+                text: 'Apply'
+                on_press: root.apply(5)
+
+
